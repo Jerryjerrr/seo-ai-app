@@ -1,5 +1,10 @@
 from flask import Flask
+
 app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "<h1>Welkom bij MetaMasters!</h1><p>De AI SEO tool is actief 🧠🚀</p>"
 
 if __name__ == '__main__':
     import os
